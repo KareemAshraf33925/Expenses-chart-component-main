@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Verypaleorange);
+}
+:root{
+    --Softred: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+   --Darkbrown: hsl(25, 47%, 15%);
+   --Mediumbrown: hsl(28, 10%, 53%);
+   --Cream: hsl(27, 66%, 92%);
+   --Verypaleorange: hsl(33, 100%, 98%);
+}
+main .container{
+    margin-top: 50px;
+}
+main .container .chart_lable .header{
+    background-color: var(--Softred);
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+}
+main .container .chart_lable .header div span{
+    display: inline-block;
+    color: var(--Cream);
+    font-weight: 400;
+}
+main .container .chart_lable .header div p{
+    color: var(--Verypaleorange);
+    font-size:18px;
+    font-weight: 700;
+    font-family:"DM Sans";
+}
+main .container .chart{
+    width:400px;
+    height: 500px;
+    background-color:#fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 50px 0;
+}
+main .container .chart h1{
+    font-size:25px;
+    font-weight: 700;
+    font-family:"DM Sans";
+}
+main .container .chart .days{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:5px;
+    margin-top: 50px;
+    border-bottom: 1px solid #d8d5d5;
+    padding-bottom: 20px;
+}
+main .container .chart .days .day_mon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 88px;
+}
+main .container .chart .days .day_mon .top{
+    background-color: var(--Darkbrown);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+   opacity: 0;
+}
+main .container .chart .days .day_mon .top.active{
+    opacity: 1;
+}
+main .container .chart .days .day_mon .grid_mon{
+    background-color: var(--Softred);
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+main .container .chart .days .day_mon .grid_mon.active{
+    opacity: 0.6;
+}
+main .container .chart .days .day_tue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+main .container .chart .days .day_tue .top_t{
+    background-color: var(--Darkbrown);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+main .container .chart .days .day_tue .top_t.active{
+    opacity: 1;
+}
+main .container .chart .days .day_tue .grid_tue{
+    background-color: var(--Softred);
+    border-radius: 5px;
+    height: 80px;
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+main .container .chart .days .day_tue .grid_tue.active{
+    opacity:0.6;
+}
+main .container .chart .days .day_wed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .container .chart .days .day_wed .top_w{
+    background-color: var(--Darkbrown);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+main .container .chart .days .day_wed .top_w.active{
+    opacity: 1;
+}
+main .container .chart .days .day_wed .grid_wed{
+    background-color: var(--Cyan);
+    border-radius: 5px;
+    height: 130px;
+    width: 40px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+main .container .chart .days .day_wed .grid_wed.active{
+    opacity: 0.6;
+}
+main .container .chart .days .day_thu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .container .chart .days .day_thu .top_th{
+    background-color: var(--Darkbrown);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+   top: 68px;
+   transition: all 0.6s;
+   opacity: 0;
+}
+main .container .chart .days .day_thu .top_th.active{
+    opacity: 1;
+}
+main .container .chart .days .day_thu .grid_thu{
+    background-color: var(--Softred);
+    border-radius: 5px;
+    height: 60px;
+    width: 40px;
+    margin-top: 70px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+main .container .chart .days .day_thu .grid_thu.active{
+    opacity: 0.6;
+}
+main .container .chart .days .day_fri{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 86px;
+}
+main .container .chart .days .day_fri .top_f{
+    background-color: var(--Darkbrown);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0;
+}
+main .container .chart .days .day_fri .top_f.active{
+    opacity: 1;
+}
+main .container .chart .days .day_fri .grid_fri{
+    background-color: var(--Softred);
+    border-radius: 5px;
+    height: 45px;
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+main .container .chart .days .day_fri .grid_fri.active{
+    opacity: 0.6;
+}
+main .container .chart .days .day_sat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 21px;
+}
+main .container .chart .days .day_sat .top_s{
+    background-color: var(--Darkbrown);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+main .container .chart .days .day_sat .top_s.active{
+    opacity: 1;
+}
+main .container .chart .days .day_sat .grid_sat{
+    background-color: var(--Softred);
+    border-radius: 5px;
+    height: 110px;
+    width: 40px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+main .container .chart .days .day_sat .grid_sat.active{
+    opacity: 0.6;
+}
+main .container .chart .days .day_sun{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+main .container .chart .days .day_sun .top_su{
+    background-color: var(--Darkbrown);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+main .container .chart .days .day_sun .top_su.active{
+    opacity:1;
+}
+main .container .chart .days .day_sun .grid_sun{
+    background-color: var(--Softred);
+    border-radius: 5px;
+    height: 50px;
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+main .container .chart .days .day_sun .grid_sun.active{
+    opacity: 0.6;
+}
+main .container .chart .Total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top:30px;
+}
+main .container .chart .Total .thismonth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .container .chart .Total .thismonth span{
+    display:block;
+    color: #cfcaca;
+    font-size:16px;
+    font-weight: 400;
+    font-family:"DM Sans";
+    position: relative;
+    top:35px;
+}
+main .container .chart .Total .thismonth p{
+    font-size:40px;
+    font-weight: 700;
+    font-family:"DM Sans";   
+}
+main .container .chart .Total .lastmonth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .container .chart .Total .lastmonth span{
+   margin-left: 70px;
+   display:block;
+}
+main .container .chart .Total .lastmonth  p{
+    color: #cfcaca;
+    font-size:16px;
+    font-weight: 400;
+    font-family:"DM Sans";
+}
